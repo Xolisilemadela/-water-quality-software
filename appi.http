@@ -1,0 +1,24 @@
+### Signup Request
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+  "username": "xolisilenokulunga197@gmail.com",
+  "email": "xolisilenokulunga197@gmail.com",
+  "password": "password123"
+}
+
+###
+
+### Existing Email Error Test
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+  "username": "anotheruser",
+  "email": "xolisilenokulunga197@gmail.com",
+  "password": "anotherpassword123"
+}
+
+###
+
